@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> MY FIRST HTML PAGE</title>
     <style>
         #container{
 
@@ -13,6 +13,172 @@
             margin-left: 3pc;
             background-color: #D9ECEA;
          }
+         #b2 {
+    --primary-teal: #2d6a61;
+    --bg-light-gray: #f1f5f4;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --card-bg: #ffffff;
+    --font-ui: 'Inter', sans-serif;
+}
+         .widget-wrapper {
+    padding: 40px;
+}
+.dashboard-card {
+    background: var(--card-bg);
+    width: 520px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    padding: 24px;
+    position: relative;
+}
+
+/* OS Window Header Controls */
+.window-header {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 24px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+.dot.red { background-color: #ff5f56; }
+.dot.yellow { background-color: #ffbd2e; }
+.dot.green { background-color: #27c93f; }
+
+.card-body h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 28px;
+    letter-spacing: -0.2px;
+}
+.chart-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 110px;
+    margin-bottom: 28px;
+    padding-bottom: 6px;
+}
+
+.bar {
+    width: 10%;
+    background-color: var(--bg-light-gray);
+    border-radius: 4px;
+    transition: height 0.4s ease;
+}
+
+.bar.colored {
+    background-color: var(--primary-teal);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.stat-box {
+    background: #f7faf9;
+    border-radius: 12px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.stat-sub {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.font-green { color: #10b981; }
+
+/* --- Floating Overlays --- */
+
+/* Growth Badge (Top Right) */
+.floating-growth {
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    background:#0A6C57;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 14px;
+    box-shadow: 0 10px 20px rgba(45, 106, 97, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.growth-arrow {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.growth-text {
+    font-size: 9px;
+    opacity: 0.75;
+    white-space: nowrap;
+}
+
+/* Integration Notification (Bottom Left) */
+.floating-integration {
+    position: absolute;
+    bottom: -30px;
+    left: -40px;
+    background: white;
+    padding: 5px 7px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.integration-icon {
+    background: #0A6C57;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.integration-text h4 {
+    font-size: 11px;
+    font-weight:1000px;
+    padding-left: 0%;
+    margin:auto;
+    margin-top: 7px;
+    color: var(--text-dark);
+}
+
+.integration-text p {
+    margin: auto;
+    font-size: 10px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
             #header{
                 height: 75px;
             display: flex;
@@ -344,7 +510,61 @@
                 <h4>🛡️SOC 2 Certified  | ⚡ 99.9% Uptime SLA | 👤 50k + Teams</h6>
             </div>
             <div id="b2">
-                <img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\png.png" style="width: fit-content;">
+               <div class="widget-wrapper">
+        <div class="dashboard-card">
+            <div class="window-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            
+            <div class="card-body">
+                <h3>Team Performance</h3>
+                
+                <div class="chart-container">
+                    <div class="bar" style="height: 35%;"></div>
+                    <div class="bar" style="height: 48%;"></div>
+                    <div class="bar" style="height: 38%;"></div>
+                    <div class="bar colored" style="height: 70%;"></div>
+                    <div class="bar" style="height: 55%;"></div>
+                    <div class="bar colored" style="height: 82%;"></div>
+                    <div class="bar" style="height: 62%;"></div>
+                    <div class="bar colored" style="height: 85%;"></div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-value">94%</span>
+                        <span class="stat-label">Task Rate</span>
+                        <span class="stat-sub font-green">+12%</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-value">2.4k</span>
+                        <span class="stat-label">Active Users</span>
+                        <span class="stat-sub font-green">+8%</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-value">18h</span>
+                        <span class="stat-label">Saved / week</span>
+                        <span class="stat-sub font-green">+24%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-growth">
+                <span class="growth-arrow">&uarr; 34%</span>
+                <span class="growth-text">Output this week</span>
+            </div>
+
+            <div class="floating-integration">
+                <div class="integration-icon">✦</div>
+                <div class="integration-text">
+                    <h4>New integration</h4>
+                    <p>Slack connected · just now</p>
+                </div>
+            </div>
+        </div>
+    </div>
             </div>
 
         </div>
