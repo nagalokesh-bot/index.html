@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+
+            height: 700px;
+            width: 100pc;
+            margin:30px;
+            margin-left: 3pc;
+            background-color: #D9ECEA;
+         }
+            #header{
+                height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 100px;
+            padding-right: 100px;
+            }
+             #logo,#menublock,#signin{
+                 height: 75px;
+                 font-size: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+           }
+           #menublock a,#signin a{
+               text-decoration: none;
+               color: black;
+               font-size: 18px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+           }
+        #logo{
+            padding-left: 70px;
+        }
+         #sft{
+
+            border-radius: 50px;
+            background-color:#1A7A6E;
+            font-size: 18px;
+
+        }
+        #WORD{display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+             width: 100pc;
+            color: #5BBFB5;;
+        }
+        #box{
+            height: 625px;
+             width: 100pc;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #b1,#b2{
+            height: 500px;
+            width: 45%;
+            margin: 0 20px;
+        }#p1 button{
+            background-color: white;
+            font-size: 15px;
+    color: #5BBFB5;
+    border-radius: 50px;
+    width:fit-content;
+    margin-left:5pc;
+    margin-top: 50px;
+        }
+        #para{
+            margin: 4%;
+             margin-left:4pc;
+            gap: 2%;
+        }
+        #workflow{
+            font-size: 50px;
+            font-family: ' serif';
+            margin-left:4pc;
+            margin-bottom: 0%;
+            margin-top: 0%;
+            
+        }#start{
+            font-size:larger;
+            width:fit-content;
+            padding:08px 15px;
+            margin-left:60px;
+            border-radius: 50px;
+            background-color:#2A9D8F;
+            
+        }#start1{
+            font-size:larger;
+            margin-left:40px;
+            border-radius: 50px;
+             padding:08px 15px;
+            color:#2A9D8F;}
+        h4{
+            margin-left:60px;
+            padding:0px 30px;
+        }
+        #nmvpak {
+            display: flex;
+            justify-content: space-evenly;
+            align-items:center;
+             width: 100pc;
+
+        } a{
+            text-decoration: none;
+            color:#2A9D8f;
+            font-size: 18px;
+        }
+    #box2{
+        height: 700px;
+         width: 100pc;
+         margin-top: 2pc;
+        margin-left: 3pc;
+         display:flex;
+           justify-content:space-between;
+        padding-top:100px;
+        background-color: #F3F9F9;
+    }
+        #ma{
+            margin-left:47pc;
+            margin-bottom: 1pc;
+            height: fit-content;
+            font-size: 12px;
+            padding:0px 20px;
+            border-radius: 50px;
+            background-color: #E3EEEE;
+            color:#2A9D8F ;
+        }
+
+         #wf,#p2{
+            font-size:2pc;
+            padding-left: 43pc;
+            height: fit-content;
+            margin: 0px;
+             }
+            #p2{
+                font-size:2.5pc;
+                font-family:"DM Sans";
+                color:#1F7C71;
+                
+            }
+            .images{
+                margin-left:6pc;
+                padding-top: 1pc;
+                height: 50vh;
+                width:40%;
+                display: flex;
+                justify-content: space-evenly;
+                position: absolute;
+                
+            }
+        #box3{
+        height: 120pc;
+         width: 100pc;
+         margin-left: 3pc;
+         display:flex;
+        justify-content:space-between;
+        padding-top:100px;
+        background-color:#E7F2F1;
+       }
+       #b5,#b6,#b7,#b9{
+        height:25pc;
+        width:100pc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+       #b8 {
+        height:27pc;
+        width:100pc;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+       }
+       .hbd{
+        font-size: xx-large;
+        
+           
+       }
+       #box4{
+        height: 50pc;
+         width: 100pc;
+         display:flex;
+        justify-content:space-between;
+        padding-top:100px;
+        background-color:#F3F9F9;
+       }
+       #field{
+        height: 30pc;
+         width: 100pc;
+        display: flex;
+        justify-content:center;
+       }
+        #box5{
+        height: 42pc;
+         width: 100pc;
+        
+        padding-top:100px;
+        background-color:#E7F2F1;
+        
+       }
+       #midbox{
+        height: 0pc;
+        width: 100pc;
+        border:1px,solid,red;
+        display: flex;
+        justify-content: space-around;
+        padding-top:6pc ;
+       }.b10 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            color: #1F666B;
+        }
+        .tall {
+            grid-row: span 2;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            font-size: 0.85rem;
+        }
+        .avatar {
+            width: 35px;
+            height: 35px;
+            background: #E2E8F0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+         #box6{
+        height: 28pc;
+         width: 100pc;
+        
+        padding-top:100px;
+        background-color:#F3F9F9;
+        
+       }
+        #wf1,#p21{
+            font-size:2.5pc;
+            padding-left: 42pc;
+            height: fit-content;
+            margin: 0px;
+            font-family:sans-serif
+             }
+      #p21{
+        padding-left: 46pc;
+        color: #268075;
+      }
+      .hh4{
+        padding:2px 20px 2px 20px;
+        margin:5px;
+        border:1px,solid,black;
+        border-radius:10px;
+        font-size: small;
+        color:#90A3A1;
+        background-color:white;
+      }
+      #box7{
+        height: 60pc;
+         width: 100pc;
+        background-color:#E7F2F1;
+        padding-top:100px;
+      }
+      #bb7{display: flex;
+        justify-content: space-around;
+      } #wf2,#p22{
+            font-size:2.5pc;
+            padding-left: 05pc;
+            height: fit-content;
+            margin: 0px;
+            font-family:sans-serif
+             }
+             
+        #ma1{
+            margin-top: 3pc;
+            margin-left:5.4pc;
+            margin-bottom: 1pc;
+            height: fit-content;
+            font-size: 12px;
+            padding:0px 2px;
+            border-radius: 50px;
+            background-color: #E3EEEE;
+            color:#2A9D8F ;
+        } #box8{
+        height: 50pc;
+         width: 100pc;
+         background-color: white;
+      }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo"><b>clear wave</b></div>
+            <div id="menublock">
+                <a href="" id="app">App</a>
+                <a href="" id="feature">Features</a>
+                <a href="" id="pricing">Pricing</a>
+                <a href="" id="reviews">Reviews</a>
+                <a href="">FAQ</a>
+            </div>
+            <div id="signin">
+                <a href="">Sign In</a>
+                <button id="sft">Start a Free Trial</button>
+
+
+            </div>
+
+        </div>
+        <div id="box">
+            <div id="b1">
+                <div id="p1"><button>Rated #1 productivity saas of 2004</button></div>
+        
+                <h1 id="workflow">Your workflow,</h1><h1 id="workflow" style="color:#1F7C71; font-family: DM Sans;"  ><i>finally clear.</i></h1>
+                <p id="para">Clearwave unifies your team's projects, data, and<br>
+                             communication into one calm, focused surface. Less noise,<br>
+                            more done.</p>
+                <button id="start">Start Free - No Card <b>⇨</b></button>
+                <button id="start1">ᐅ See it in action</button>
+                <br>
+                <h4>🛡️SOC 2 Certified  | ⚡ 99.9% Uptime SLA | 👤 50k + Teams</h6>
+            </div>
+            <div id="b2">
+                <img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\png.png" style="width: fit-content;">
+            </div>
+
+        </div>
+        
+    </div>
+    <h6 ID="WORD">TRUSTED BY FORWARD-THINKING TEAMS AT</h6>
+    <div id="nmvpak">
+                <a href="" id="nex">Nexaflow</a>
+                <a href="" id="mer">Meridian</a>
+                <a href="" id="vl">Vanta Labs</a>
+                <a href="">Pulsar HQ</a>
+                <a href="">Arclight</a>
+                <a href="">Korova Co</a>
+    </div>
+    <div id="box2">
+        <div id="mobileapp">
+            <button id="ma">●  Mobile  App</button>
+            <br>
+             <h1 id="wf" style="font-family:sans-serif">Your workspace,</h1>
+             <h1 id="p2"><i style="font-family:playfair;">in your pocket</i></h1>
+             <p style="padding-left:40.5pc; font-size:small; margin-bottom: ;">The clearwave Mobile app brings every dashboard,task,and</p>
+              <p style="padding-left:41.3pc; font-size:small; margin-top:0%;">notification to you - beautifully adapted for any screen</p>
+            <div class="b4">
+                <ul class="images">
+                    <li><img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\tm-622-screen-02.jpg" style="height: 400px; width:260px;"></li>
+                     <li><img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\tm-622-screen-03.jpg" style="height: 400px; width:260px;"></li>
+                    <li><img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\tm-622-screen-04.jpg" style="height: 400px; width:260px;"></li>
+                    <li><img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\tm-622-screen-05.jpg" style="height: 400px; width:260px;"></li>
+                    <li><img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\tm-622-screen-01.jpg" style="height: 400px; width:260px;"></li>
+                </ul>
+
+        </div>
+    </div>
+    </div>
+    <div id="box3">
+        <div id="mobileapp">
+            <button id="ma" style="font-size:x-small;">● PLATFORM FEATURES</button>
+            <br>
+             <h1 id="wf" style="font-family:sans-serif;padding-left:45.2pc;">Built for<i style="font-family:playfair; color: #1A7A6E;"> clarity</i></h1>
+             <h1 id="p3" style="padding-left:45.6pc;margin-top:0px;"><b>at every scale</b></h1>
+             <p style="padding-left:38pc; font-size: large; margin-bottom: 1%;">Every feature is designed to reduce friction and surface what</p>
+              <p style="padding-left: 43pc; font-size: large; margin-top:0%;">matters.No bloat,no configuration maze</p>
+            <div id="b5">
+                <div id="bdb" style="height: 14pc;width:40pc;margin-left: 5pc;margin-top:5pc;">
+                    <p style="padding-left: 5pc;margin:0%; margin-top: 2%;font-size:small;color: #1A7A6E;">01- UNIFIED DASHBOARD</p>
+                    <p style="padding-left: 5pc;margin: 0%;font-size:xx-large;">Every metric, one calm surface</p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top:1%;margin-right:2%;font-size:medium; color:#6A8682">Pull data from any source into a single, composable view. Share live</p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top: 0.5%;font-size:medium;color:#6A8682">dashboards with stakeholders - no exports, no screenshots.</p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top: 2%;font-size:medium;color:#89A19E; ">☑  Drag-and-drop widget builder</p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top:0.5%;font-size:medium;color:#89A19E;">☑  Real-time data sync across all sources</p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top:0.5%;font-size:medium;color:#89A19E;">☑  Role-based sharing with granular permissions</p>
+                </div>
+                <div id="bdb" style="height: 20pc;width:50pc;"><img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\png2.png" style="padding-left: 4%;"</div>
+            </div><br>
+            
+    </div>  
+            <div id="b6">
+        <div id="bdb" style="height: 18pc;width:36pc; margin-left: 3pc;"><img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\png3.png" style="padding-left: 4%;height:20pc;"</div>
+     
+</div>
+                <div id="bdb" style="height: 14pc;width:40pc;padding-left:5pc ">
+                    <p style=";margin: 0%;font-size:xx-large;">Routines that run</p>
+                    <p style="margin: 0%;font-size:xx-large;"><i>themselves</i></p>
+                    <p style="margin:0%; margin-top: 2%;font-size:medium;color:#89A19E;">Build automation flows with natural language. Clearwave</p>
+                    <p style="margin:0%; margin-top:1%;margin-right:2%;font-size:medium;color:#89A19E;">understands your intent and suggests the next step - no flowchart</p>
+                    <p style="margin:0%; margin-top: 0.5%;font-size:medium;color:#89A19E;">diagrams needed.</p>
+                    <p style="margin:0%; margin-top: 2%;font-size:medium;color:#89A19E;">☑  Natural language automation builder</p>
+                    <p style="margin:0%; margin-top:0.5%;font-size:medium;color: #89A19E;">☑  500+ pre-built trigger templates</p>
+                    <p style="margin:0%; margin-top:0.5%;font-size:medium;color:#89A19E;">☑  Full audit trail for every action</p>
+                </div>  
+    </div>
+        <div id="b7">
+                <div id="bdbb" style="height: 14pc;width:40pc;margin-left: 5pc;margin-top:5pc;">
+                    <p style="padding-left: 5pc;margin:0%; margin-top: 2%;font-size:small;color: #1A7A6E;">03- TEAM COLLABORATION</p>
+                    <p style="padding-left: 5pc;margin:0%;font-size:xx-large;">Comments,context,</p>
+                    <p style="padding-left: 5pc;margin: 0%;font-size:xx-large;">and<i> clarity</i></p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top:1%;margin-right:2%;font-size:medium; color:#6A8682">rotate anything, assign tasks inline, and resolve conversations</p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top: 0.5%;font-size:medium;color:#6A8682">without switching tabs. The work and the disscusion stay together</p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top: 2%;font-size:medium;color:#89A19E; ">☑  Inline comments on any data point</p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top:0.5%;font-size:medium;color:#89A19E;">☑  Threaded task assignments</p>
+                    <p style="padding-left: 5pc;margin:0%; margin-top:0.5%;font-size:medium;color:#89A19E;">☑  Real-time presence and live cursors</p>
+                </div>
+                <div id="bdbb" style="height: 25pc;width:50pc;"><img src="C:\Users\DELL\OneDrive\Desktop\paithacs html\png4.png" style="padding-left: 4%;"</div>
+            </div>
+     
+    </div>
+    <div id="b8" style= "margin-top:5pc; border: 1px,solid,#DBE6E5;">
+        <div class="hbd"style=" height: 15pc; width: 15pc;">
+            <div style="height: fit-content;width: fit-content;padding-left: 4pc;padding-top: 3pc;"><b style="color:#288075 ;">___</b><b style="font-size:3pc;font-size:3pc; font-family:'Segoe UI';"><br>17</b><b style="color: #288075;font-size:xx-large;">k+</b>
+            </div>
+            <div style="height: fit-content;width: fit-content;">
+                <P style="font-size: small;padding-left: 4.5pc;margin:0;"><b>Teams Worldwide</b></P>
+                <P style="font-size: small;padding-left: 4.5pc;margin:0; color:#9AB2B0;">Across 80+countries</P>
+            </div>
+        </div>
+        
+        <div class="hbd"style="height: 15pc; width: 15pc;">
+            <div style="height: fit-content;width: fit-content;padding-left: 4pc;padding-top: 3pc;"><b style="color:#288075 ;">___</b><b style="font-size:3pc; font-family:'Segoe UI';"><br>11</b><b style="color: #288075;font-size:xx-large;">%</b>
+            </div>
+            <div style="height: fit-content;width: fit-content;">
+                <P style="font-size: small;padding-left: 4.5pc;margin:0;"><b>Avg. Productivity Gain</b></P>
+                <P style="font-size: small;padding-left: 4.5pc;margin:0; color:#9AB2B0;">Measured in first 30 days</P>
+            </div>
+        </div>
+        <div class="hbd"style="height: 15pc; width: 15pc;"><div style="height: fit-content;width: fit-content;padding-left: 3pc;padding-top: 3pc;"><b style="color:#288075 ;">___</b><b style="font-size:3pc; font-family:'Segoe UI';"><br>34.3</b><b style="color: #288075;font-size:xx-large;">%</b>
+            </div>
+            <div style="height: fit-content;width: fit-content;">
+                <P style="font-size: small;padding-left: 3pc;margin:0;"><b>Uptime SLA</b></P>
+                <P style="font-size: small;padding-left: 3pc;margin:0; color:#9AB2B0;">Guaranteed and monitored</P>
+            </div></div>
+        <div class="hbd"style="height: 15pc; width: 15pc;"><div class="hbd"style=";height: 15pc; width: 15pc;"><div style="height: fit-content;width: fit-content;padding-left: 3pc;padding-top: 3pc;"><b style="color:#288075 ;">__</b><b style="font-size:3pc; font-family:'Segoe UI';"><br>6</b><b style="color: #288075;font-size:xx-large;">h</b>
+            </div>
+            <div style="height: fit-content;width: fit-content;">
+                <P style="font-size: small;padding-left: 3pc;margin:0;"><b>Saved Per Team Weekly</b></P>
+                <P style="font-size: small;padding-left: 3pc;margin:0; color:#9AB2B0;">On average across all plans</P>
+            </div></div>
+
+    </div>
+    </div>
+     <div id="box4">
+        <div id="mobileapp" >
+            <button id="ma">● pricing</button>
+            <br>
+             <h1  style="font-family:playfair;padding-left: 37pc;margin: 0%; font-size:2.5pc;">Simple,<i style="color:#288075;">transparent</i> pricing</h1>
+             <p style="padding-left:40.3pc; font-size:medium; margin-bottom: ;">No hidden fees. No surprise overages. Cancel anytime.</p>
+              <p style="padding-left:42pc; font-size:medium; margin-top:6%;"><b style="color:#288075;">Monthly</b> <button style="border-radius:50px;padding:0px 40px 0px 0px; font-size:medium;margin-left:1pc;margin-right: 1pc; background-color:#1A7A6E;">⚪</button><b style="color: #4B6A67; margin-right:1pc;">Annual</b><button style="border-radius: 20px; padding: 4px 10px 4px 10px; color:#288075;">save35%</button></p>
+              <br>
+              <br>
+            <div id="field" >
+                <form>
+            <fieldset style="border-radius: 20px; margin-top: 3pc; background-color:#FFFFFF;color: #9EB3B0;">
+                <legend></legend>
+                <p>STARTER<BR>
+                <B style="font-size: xx-large;color: black;font-family:'Franklin Gothic Medium';"><b style="font-size: small;">$</b>20<b style="font-size: small;">/mo</b></B>
+                <br>
+                <br>
+                <br>
+                <p>For individuals and small teams getting<br>
+                started with structured workflows.</p>
+                <p>___________________________________  </p>
+                <p>☑ Up to 5 team members<br>
+                   ☑ 10 active dashboards<br>
+                   ☑ Basic automations (50/mo)<br>
+                   ☑ 7-day data history<br>
+                   ☑ Email support</p><BR>
+                   <button style="margin:0PX 0PX 0PC 3.5pc;padding: 0PX 30PX 0PX 30PX; border-radius: 20px;background-color:white;color:#9EB3B0;">Start Free Trail</button>
+                </p>
+            </fieldset>
+        </form>
+                 <form style="padding:0pc 1pc 0pc 1pc;">
+            <fieldset style="border-radius: 20px; margin-top: 2pc; background-color:black;color:white" >
+                <legend style="border:1px,solid,black; border-radius:20px;background-color:#1A7A6E;color:white;margin-left: 5.5pc;">most popular</legend>
+                <p>PROFESSIONAL<BR>
+                <B style="font-size: xx-large;color: black;font-family:'Franklin Gothic Medium';"><b style="font-size: small;">$</b>60<b style="font-size: small;">/mo</b></B>
+                <br>
+                <br>
+                <br>
+                <p>For growing teams that need powerful<br>
+                automation and advanced reporting.</p>
+                <p>___________________________________  </p>
+                <p>☑ Up to 25 team members<br>
+                   ☑ Unlimited dashboards<br>
+                   ☑ Advanced automations (unlimited)<br>
+                   ☑ 90-day data history<br>
+                   ☑ Priority chat support<BR>
+                   ☑ Mobile app access</p>
+                   <button style="margin:0PX 0PX 1PC 3.5pc;padding: 0PX 30PX 0PX 30PX; border-radius: 20px;background-color:#1A7A6E;color:white;">Start Free Trail</button>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset style="border-radius: 20px; margin-top: 3pc; background-color:white;color:#9EB3B0;">
+                <legend></legend>
+                <p>ENTERPRISE<BR>
+                <B style="font-size: xx-large;color: black;font-family:'Franklin Gothic Medium';"><b style="font-size: small;">$</b>150<b style="font-size: small;">/mo</b></B>
+                <br>
+                <br>
+                <br>
+                <p>For large organizations with custom<br>
+                requirements and compliance needs.</p>
+                <p>___________________________________  </p>
+                <p>☑ Up to 25 team members<br>
+                   ☑ Unlimited dashboards<br>
+                   ☑ Advanced automations (unlimited)<br>
+                   ☑ 90-day data history<br>
+                   ☑ Dedicated success manager<BR>
+                   ☑ SOC 2 & compliance reports</p>
+                   <button style="margin:0PX 0PX 1PC 3.5pc;padding: 0PX 30PX 0PX 30PX; border-radius: 20px;background-color:white;color:#9EB3B0;">Contact sales</button>
+            </fieldset>
+        </form>
+            </div>
+              
+        </div>
+     </div>   
+     <div id="box5">
+        <div id="mobileapp" >
+            <h2  style="padding-left:48.2pc; color: #5BBFB5;"></h2>
+            <br>
+             <h1  style="font-family:playfair;padding-left: 40pc;margin: 0%; font-size:2pc;">Teams that,<i style="color:#288075;">love</i>clearwave</h1>
+             <p style="padding-left:41pc; font-size:small; margin-bottom: ;">Don't take our word for it - here's what real teams say after 90</p>
+             <p style="padding-left:50pc; font-size:small; margin-bottom: ;">days</p>
+        </div>
+        <div class="b10">
+        <div class="card tall">
+            <p>★★★★★<br><br><br>"We replaced three separate tools<br>with Clearwave and actually have<br>fewer meetings now. The<br>    
+                automation flows handle the<br>handoffs our team used to spend<br>
+                mornings sorting out. It's the<br>calmest our workflow has ever felt."<br><br></p>
+            <div class="profile"><br>
+                <div class="avatar">SL</div>
+                <div><strong>Sarah Lindqvist</strong><br>Head of Operations Stratum IO</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>★★★★★<br><br>"The mobile app alone justified the<br>switch. I can review dashboards and<br>
+                approve tasks between meetings<br>without opening my laptop."</p>
+            <div class="profile">
+                <div class="avatar">MR</div>
+                <div><strong>Marcus Reyes</strong><br>Product Director Meridian</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>★★★★★<br><br>"Onboarding our 30-person team took<br>one afternoon. The learning curve is<br>genuinely flat."</p>
+            <div class="profile">
+                <div class="avatar">PK</div>
+                <div><strong>Priya Kapoor</strong><br>Engineering Lead Vanta Labs</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>ahead of what we had. We can finally<br>show stakeholders live data instead of<br>preparing decks."</p>
+            <div class="profile">
+                <div class="avatar">TW</div>
+                <div><strong>Tom Wainwright</strong><br>CFO Pulsar HQ
+</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>message. Had a custom integration<br>question answered in under two hours."</p>
+            <div class="profile">
+                <div class="avatar">AN</div>
+                <div><strong>Aiko Nakamura</strong><br>CTO Nexaflow</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="box6">
+    <div id="mobileapp">
+            <button id="ma">●  Integration</button>
+            <br>
+             <h1 id="wf1" >Connects with your</h1>
+             <h1 id="p21"><i style="font-family:playfair;">existing stack</i></h1><br><br><br><br><br><br><br>
+             <div style="display:flex; padding-left:31.5pc; margin: 0%;">
+                <h4 class="hh4">Slack</h4><h4 class="hh4">Google sheets</h4><h4 class="hh4">Google drive</h4><h4 class="hh4">Zapier</h4><h4 class="hh4">Stripe</h4><h4 class="hh4">GitHub</h4><h4 class="hh4">Notion</h4>
+             </div>
+            <div style="display:flex; padding-left:30.5pc; margin: 1%;">
+                <h4 class="hh4">Mailchimp</h4><h4 class="hh4">HubSpot</h4><h4 class="hh4">Airtable</h4><h4 class="hh4">Intercom</h4><h4 class="hh4">Salesforce</h4><h4 class="hh4">Figma</h4><h4 class="hh4">Linear</h4>
+             </div>
+             <div style="display:flex; padding-left:47pc; margin: 1%;">
+                <h4 class="hh4">Jira</h4><h4 class="hh4">Webflow</h4>
+             </div>
+</div>
+<div id="box7">
+    <div id="bb7">
+        <div id="lastpage">
+            <button id="ma1">●  FAQ</button>
+            <br>
+             <h1 id="wf2" >Questions,</h1>
+             <h1 id="p22"><i style="font-family:playfair;color:#288277;">answered</i></h1>
+             <p style="padding-left:5pc; font-size:small;">Can't find what you're looking for? Reach our<br>team at hello@clearwave.io - we reply within 2<br>hours.</p>
+        </div>
+            <div style=height: 35pc;width: 50pc; padding:10px;"> 
+                <p>__________________________________________________________________________________________________</p>
+                <p> is there a free trial <select style="margin-left:34.4pc;background-color:#E7F2F1;border-radius:30%;"></select></p> 
+                <p>__________________________________________________________________________________________________</p>
+                <p> How does pricing work for larger teams? <select style="margin-left:25.2pc;background-color:#E7F2F1;border-radius:30%;"></select></p> 
+                <p>__________________________________________________________________________________________________</p>
+                <p> Can I migrate data from another tool? <select style="margin-left:26.4pc;background-color:#E7F2F1;border-radius:30%;"></select></p> 
+                <p>__________________________________________________________________________________________________</p>
+                <p> What does the 99.9% uptime SLA mean? <select style="margin-left:25pc;background-color:#E7F2F1;border-radius:30%;"></select></p> 
+                <p>__________________________________________________________________________________________________</p>
+                <p> Is my data secure? <select style="margin-left:34pc;background-color:#E7F2F1;border-radius:30%;"></select></p> 
+                <p>__________________________________________________________________________________________________</p>
+                <p> Can I cancel anytime? <select style="margin-left:32.5pc;background-color:#E7F2F1;border-radius:30%;"></select></p> 
+                <p>__________________________________________________________________________________________________</p>
+            </div>
+        </div>
+        <div id="bb8" style="height: 18pc;width: 80pc;border:1px,solid,black; margin:09pc 5pc 0pc 10pc;background-color:black; border-radius:2pc; display: flex;"> 
+             <div id="mobileapp"><br>
+            <button id="ma1">●  GET STARTED TODAY</button>
+             <h1 style="padding-left: 5pc;font-size: 2pc;margin: 0%;color: white;" >Ready For a</h1>
+             <h1 style="padding-left: 5pc;font-size: 2pc;margin: 0%; color:#36909A;"><i style="font-family:playfair;">clearer workflow?</i></h1>
+             <p style="color:#2B3F46;padding:0px 0px 0pc 5pc;font-size: small;">Join 50,000+ teams who replaced chaos with clarity. Set up in under 10<br><br>minutes.</p>
+            </div>
+            <div style="height: fit-content;width: fit-content;">
+                <button style="margin: 7pc 0pc 0pc 37pc ;border-radius: 20px;background-color:#1A7A6E;color:#9EB3B0;"><b>Start Free Trail  ----></b></button>
+                <button style="margin: 1pc 0pc 0pc 37.5pc ;border-radius: 20px;background-color:black;color:#909B99;"><b>Schedule a demo</b></button>
+                </div>
+</div>
+<div id="box8"> 
+    <div style="height:35pc;width:100%;border:1px,solid,green;margin-top:3.7pc;background-color: black;">
+        <div style="height:15pc;width:80%;margin:5pc;margin-left:9pc; display: flex;">
+            <div style="padding:3pc 0px 0px 3pc; color:#727C7A; height: fit-content;width: fit-content;"><b style="font-size:large;color:white;">clear</b><B style="font-size:large;color:#46938B;">wave</B><br><br>
+                The calm, powerful workspace for<br>teams that want to focus on work -<br>not on managing it.
+</div>
+            <div style="color:#727C7A;padding:2pc 0px 0px 11pc;font-size: small;"> PRODUCT<br><br><br>Features<br><br>Mobile App<br><br>Pricing<br><br>Integrations<br><br>Changelog</div>
+            <div style="color:#727C7A;padding:2pc 0px 0px 13pc;font-size: small;"> COMPANY<br><br><br>About<br><br>Blog<br><br>Careers<br><br>Press Kit<br><br>Status</div>
+            <div style="color:#727C7A;padding:2pc 0px 0px 13pc;font-size: small;"> SUPPORT<br><br><br>Help Center<br><br>Documentation<br><br>Security<br><br>Contact<br><br>Community</div>
+</div>
+    <p style="color:#727C7A; padding-left:3pc ;">___________________________________________________________________________________________________________________________________________________________________________________________</p>
+    <br>
+    <p style="color:#727C7A ;padding-left:10pc;">©2026 Clearwave. Design by TemplateMo <b style="color: black;">_______________________________________________________________________________</b> Policy<b style="color: black;">_______</b>Terms Of Service<b style="color: black;">______</b>Cookie Policy</p>
+    </div>
+    
+    
+</div>
+
+</body>
+</html>
